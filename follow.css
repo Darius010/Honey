@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------------------------Navbar styling -------------------------------*/
+
+.nav {
+    display: flex;
+    flex-wrap :wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color:rgba(247, 185, 241, 0.199);
+    width: 100vw;
+    position: fixed ;
+    height: 75px;
+    z-index: 1;
+   
+}
+
+.nav .logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.nav a span{
+    font-size: 2em;
+    color: rgba(238, 96, 207, 0.966);
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li{
+    list-style: none;
+    margin-left: 20px;
+    border: solid 4px #fff;
+    font-size: 2em;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color:  rgba(247, 185, 241, 0.582);
+}
+
+.nav ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+.nav ul li a:hover {
+    background: #ec9ecc;
+    color: #fff;
+}
+.nav .hamburger{
+    background-color:transparent;
+    border:none;
+    color: #fff;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+#beelogo{
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+}
+
+/* --------------------------------------This is the main banner customization -------------------------*/
+.container{
+    margin-bottom: 0;
+    padding-top: 6%;
+    height: 90vh;
+    background-image: linear-gradient(to bottom,
+    rgba(247, 185, 241, 0.315) ,
+    rgba(255, 255, 255, 0.123)) ;
+}
+
+.brand{
+    display: flex;
+    justify-content: space-around;
+    height: 85%;
+    position: absolute;
+    width: 100vw;
+}
+.brand .name {
+    height: 85%;
+    width: 40%;
+    display: grid;
+    justify-content: center;
+    text-align: center ;
+    padding-top: 20px;
+    background-color: rgba(250, 228, 34, 0.185);
+    font-family: 'Style Script', cursive;
+    color: #f87b7b;
+    border: 5px solid #fffffd;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+.brand .name h1{
+    text-decoration: underline 5px;
+    text-underline-offset: 20px ;
+    font-size: 6em;
+}
+.brand .name h2 {
+    font-size: 2em;
+    font-family: 'Patrick Hand', cursive;
+    color: #a04511ef;
+    margin-top: -20%;
+}
+.brand .name .logo{
+    height: 80%;
+    margin-bottom: 20%;
+}
+
+.brand .picture{
+    background-color: rgb(255, 255, 255);
+    height:75%;
+    width: 40%;
+    padding: 5px;
+    margin-top: 2%;
+}
+
+.brand .picture .second  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: dashed 4px rgba(238, 96, 207, 0.966);   
+}
+
+.brand .picture .second .natural{
+    height: 98%;
+    width: 98%;
+    background-image: url(./delicious-honey-dark-surface.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+     
+}
+
+.picture .second .natural h1{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.301);
+    padding-left: 3%;
+}
+
+/* ----------------------------------------------- These are the flying bees  ---------------------------------------*/
+
+.name:hover{
+    cursor: url("./pointer40.png") , auto;
+}
+#bee:hover{
+    cursor: url("./pointer40.png") , auto;
+}
+#bee2:hover{
+    cursor: url("./pointer40.png") , auto;
+}
+#bee{
+    position: absolute;
+    transition: 0.15s;
+}
+
+#bee2{
+    position: absolute;
+    transition: 0.2s;
+   
+}
+
+/* ----------------------------------------- This is the first section in the body -------------------- */
+.beees{
+    text-align: center;
+    width: 80%;
+    margin: 5px auto;
+    height: 70vh;
+    
+}
+.beees h1{
+    text-underline-offset: 10px;
+    font-family: 'Patrick Hand', cursive;
+    text-decoration: underline rgba(104, 37, 97, 0.856);
+    color: rgba(238, 96, 207, 0.966);
+    font-size: 3em;
+
+}
+
+.beees .bb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin: 5%;
+    
+}
+
+.beees .bb img{
+    width: 40%;
+    margin-left: 2%;
+}
+.beees .bb p {
+    font-family: sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    width: 50%;
+    
+}
+
+/* ----------------------------------------- This is the second section in the body -------------------- */
+
+.hives{
+    text-align: center;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.hives h1{
+    text-underline-offset: 10px;
+    font-family: 'Patrick Hand', cursive;
+    text-decoration: underline rgba(104, 37, 97, 0.856);
+    color: rgba(238, 96, 207, 0.966);
+    font-size: 3em;
+}
+
+.hives .dd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin: 5%;
+}
+
+.hives .dd img{
+    width: 40%;
+    
+}
+.hives .dd p {
+    font-family: sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    width: 50%;
+}
+
+/* ----------------------------------------- This is the third section in the body -------------------- */
+
+.products{
+    
+    text-align: center;
+   width: 80%;
+   margin: 0 auto;
+   height: 70vh;
+   
+    
+    
+}
+.products h1{
+    text-underline-offset: 10px;
+    font-family: 'Patrick Hand', cursive;
+    text-decoration: underline rgba(104, 37, 97, 0.856);
+    color: rgba(238, 96, 207, 0.966);
+    font-size: 3em;
+
+}
+
+.products .cc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin: 5%;
+}
+
+.products .cc img{
+    height: 300px;
+    width: 40%;
+    margin-left: 2%;
+}
+.products .cc p {
+    font-family: sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    width: 50%;
+}
+
+/* ----------------------------------------- This is the footer section in the body -------------------- */
+.contact{
+    height: 40vh;
+    background-color: rgba(247, 185, 241, 0.315);
+    text-align: center;
+}
+.contact button{
+    margin-top: 5%;
+    color: rgba(238, 96, 207, 0.966);
+    font-size: 3em;
+    border: white solid 2px;
+    padding: 1%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contact button:hover{
+    background: #ec9ecc;
+    color: #fff;
+}
+
+.contact p {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+/* --------------------------------- Some general ---------------------------------*/
+hr{
+    margin: 5% auto;
+    width: 50%;
+    color: gray;
+    
+}
+
+
+/* ---------------------------------The responsiveness of the website ----------------------------*/
+
+@media screen and (max-width: 1200px){
+    .beeim {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:840px){
+   .brand{
+       display: grid;
+       position: absolute;
+   }
+   .brand .name{
+       width: 100vw;
+       height: 80vh;
+   }
+   .brand .picture{
+       width: 100vw;
+       height:40vh;
+   }
+
+   #hrbees{
+       margin-top: 60%;
+
+   }
+    .nav ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #d8b5c9c2; 
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+        }
+    .nav ul li{
+        margin: 2%;
+        margin-right: 0;
+    }
+    .nav .hamburger {
+        display: block;
+    }
+    .nav-UL.show{
+        display: flex;
+        
+    }
+} 

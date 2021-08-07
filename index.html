@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow</title>
+    <link rel="stylesheet" href="./follow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+</head>
+<body>
+    <!-- --------------------- This is the navbar section-------------------------------- -->
+
+    <div class="nav" >
+        <div class="logo">
+            <a href="follow.html"><span>OH</span><img id="beelogo" src="./beelogo.png" alt=""></a>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>  
+        </button>
+        <ul class="nav-UL" id="nav-UL">
+            <li><a href="#hrbees">Bees</a></li>
+            <li><a href="#hrhives">Hives</a></li>
+            <li><a href="#hrproducts">Products</a></li>
+            <li><a href="#hrcontact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ------------------------------This is the Banner section ---------------------------->
+
+    <div class="container" >
+       <div class="brand">
+           <div class="name"  onmousemove="follow()" onmouseleave="original()">
+                <h1>Oh, honey</h1>
+                <img src="./flowerlogo.png" alt="" class="logo">
+                <h2>Just BEE-HIVE yourself...</h2>
+           </div>
+           <div class="picture">
+               <div class="second">
+                <div class="natural">
+                    <h1>The biggest producer of 100% natural honey products in the state of Ohio!</h1>
+                  
+                </div>
+               </div>
+            
+            </div>
+        </div>
+
+    <!-- This is the bee images-->
+       <div class="beeim">
+        <img src="./bee1.png" id="bee" alt="" load="original()" onmouseover="follow()">
+        <img src="./bee2.png" id="bee2" alt="" onmouseover="follow()">
+       </div>
+       
+    </div>
+
+    <!-- ---------------------------------------- Page section start------------------------------------------------------>
+    <hr id="hrbees">
+    <div class="beees" id="beees">
+        <h1>Our Workers</h1>
+        <div class="bb">
+            <img src="./honeybee-facts-1.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at rerum sit facere facilis! Nam tempore totam quisquam odio nostrum consequatur fugit nobis perspiciatis, tenetur aliquam similique officia debitis doloremque architecto iure, vitae quos distinctio, itaque dolorem exercitationem est ex. Vero aliquam minus molestiae nulla illo voluptates commodi tenetur omnis.</p>
+            
+        </div>
+    
+    </div>
+
+    <hr id="hrhives">
+
+    <div class="hives" id="hives">
+        <h1>Our Hives</h1>
+        <div class="dd">
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at rerum sit facere facilis! Nam tempore totam quisquam odio nostrum consequatur fugit nobis perspiciatis, tenetur aliquam similique officia debitis doloremque architecto iure, vitae quos distinctio, itaque dolorem exercitationem est ex. Vero aliquam minus molestiae nulla illo voluptates commodi tenetur omnis.</p>
+            <img src="./beehive-3703434_1920.jpg" alt="">
+
+        </div>
+    </div>
+
+    <hr id="hrproducts">
+
+    <div class="products" id="products">
+        <h1>Our Products</h1>
+        <div class="cc">
+            <img src="./bowl-with-honey-wooden-table-bank-honey-stay-near-wooden-spoon.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at rerum sit facere facilis! Nam tempore totam quisquam odio nostrum consequatur fugit nobis perspiciatis, tenetur aliquam similique officia debitis doloremque architecto iure, vitae quos distinctio, itaque dolorem exercitationem est ex. Vero aliquam minus molestiae nulla illo voluptates commodi tenetur omnis.</p>
+            
+
+        </div>
+    </div>
+    <hr id="hrcontact">
+    <div class="contact">
+       
+        <button>Get in Touch!</button>
+
+        <p>Copyright Oh,honey 2021</p>
+    </div>
+
+<!-------------------------------------------------------  This is inline JS ----------------------------------------------->
+<script> 
+bee = document.getElementById('bee');
+bee2 = document.getElementById('bee2');
+navUL = document.getElementById("nav-UL");
+hamburger = document.getElementById("hamburger");
+
+var x = window.innerWidth/5.4 + "px";
+var y= window.innerHeight/1.8 + "px";
+
+var x2 = window.innerWidth/5.6 + "px";
+var y2 = window.innerHeight/2.3 + "px";
+
+function follow(){
+    var x = event.clientX * 95 / window.innerWidth + "%";
+    var y = event.clientY * 90 / window.innerHeight + "%";
+    var y2 = event.clientY * 90 / window.innerHeight + "%";
+    var x2 = event.clientX * 110 / window.innerWidth  + "%";
+    for(var i=0; i<2 ; i++){
+        bee.style.top = y2;
+        bee.style.left = x2;
+        bee2.style.top = y;
+        bee2.style.left = x;
+        
+    }
+}
+function original(){
+   
+    for( var i=0; i<2; i++){
+        bee.style.top = x;
+        bee.style.left = y;
+        bee2.style.top = y2;
+        bee2.style.left = x2;
+        
+    }
+}
+
+original();
+
+hamburger.addEventListener('click', function(){
+    navUL.classList.toggle('show');
+
+});
+
+
+</script>
+    
+</body>
+</html>
